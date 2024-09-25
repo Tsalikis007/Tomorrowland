@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ff5f6d, #ffc371);
+    color: white;
+}
+
+.fullscreen-image {
+    position: fixed; /* Fica fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Largura total da viewport */
+    height: 100vh; /* Altura total da viewport */
+    object-fit: cover; /* Cobre toda a área, mantendo a proporção */
+    z-index: -1; /* Coloca atrás de outros elementos */
+}
+
+.landing-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+
+.logo{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+h1 {
+    font-size: 6em;
+    text-shadow: 3px 4px 8px rgb(0, 225, 255);
+}
+
+header p{
+    color: rgb(244, 255, 255);
+    text-shadow: 3px 4px 8px rgb(0, 255, 221);
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: rgb(136, 241, 255);
+}
+
+.artist {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.artist:hover {
+    transform: scale(1.05);
+}
+
+.artist img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+

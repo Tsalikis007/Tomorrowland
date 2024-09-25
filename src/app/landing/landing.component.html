@@ -1,0 +1,30 @@
+<div class="landing-container">
+  <img class="fullscreen-image" src="https://th.bing.com/th/id/R.30c1f7cd79c6c95d858a6b5095c49b21?rik=ZTcAYyssRZ089w&pid=ImgRaw&r=0" alt="Imagem de fundo">
+    <header>
+
+      <section class="logo">
+        <div class="tomorrow" *ngFor="let tomorrow of logo">
+          <img [src]="tomorrow.image" alt="Logo">
+        </div>
+      </section>
+      <h1>Tomorrowland</h1>
+      <p>O Festival de Música Eletrônica Mais Icônico do Mundo</p>
+    </header>
+  
+    
+
+    <section class="artists">
+      <h2>Artistas Destaque</h2>
+      <div class="artist" *ngFor="let artist of artists">
+        <img [src]="artist.image" alt="{{ artist.name }}">
+        <h3>{{ artist.name }}</h3>
+        <p>{{ artist.description }}</p>
+      </div>
+    </section>
+  
+    <footer>
+      <p>&copy; 2024 Tomorrowland. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  
